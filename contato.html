@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - R.N_Tour</title>
+    <!-- Ligação para o CSS específico desta página -->
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>R.N_Tour</h1>
+        </div>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="conteudo.html">Explorar</a></li>
+                <!-- A classe 'ativo' marca a página atual -->
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao-contato">
+            <h2>Fale Connosco</h2>
+            <p>Deseja planear a sua próxima viagem ou tem alguma dúvida? Envie-nos uma mensagem!</p>
+
+            <!-- O formulário não tem atributo 'action' porque o envio será simulado no JavaScript -->
+            <form id="form-contato">
+                <div class="grupo-input">
+                    <!-- Requisito: Identificação clara com label for associado ao id do input -->
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Introduza o seu nome completo">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduza o seu e-mail">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                </div>
+
+                <!-- Requisito: Botão visível para envio -->
+                <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+                
+                <!-- Espaço destinado a exibir o feedback visual após o envio (Sucesso ou Erro) -->
+                <div id="mensagem-feedback" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 R.N_Tour - R.N Tech_Lab</p>
+    </footer>
+
+    <!-- Ligação para o JS específico desta página que fará a validação -->
+    <script src="js/contato.js"></script>
+</body>
+</html>
